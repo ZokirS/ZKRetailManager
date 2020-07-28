@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKRDataManager", "ZKRDataManager\ZKRDataManager.csproj", "{E72E1F14-47C9-45FE-986E-DBA21C848D17}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ZKRData", "ZKRData\ZKRData.sqlproj", "{0D43006E-CF6E-4D86-9132-5A2044E87BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKRDesktopUI", "ZKRDesktopUI\ZKRDesktopUI.csproj", "{B8DDF693-B026-4365-B4D1-8918D9AC77DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{E72E1F14-47C9-45FE-986E-DBA21C848D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E72E1F14-47C9-45FE-986E-DBA21C848D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E72E1F14-47C9-45FE-986E-DBA21C848D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D43006E-CF6E-4D86-9132-5A2044E87BF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B8DDF693-B026-4365-B4D1-8918D9AC77DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DDF693-B026-4365-B4D1-8918D9AC77DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DDF693-B026-4365-B4D1-8918D9AC77DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DDF693-B026-4365-B4D1-8918D9AC77DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
