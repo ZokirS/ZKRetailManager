@@ -8,5 +8,6 @@ namespace ZKRDesktopUI.ViewModels
 {
     public class ShellViewModel
     {
+
     }
 }
