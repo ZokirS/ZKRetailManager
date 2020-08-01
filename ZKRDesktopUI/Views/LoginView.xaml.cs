@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZKRDesktopUI.Helpers;
+using ZKRDesktopUI.ViewModels;
 
 namespace ZKRDesktopUI.Views
 {
@@ -20,9 +22,16 @@ namespace ZKRDesktopUI.Views
     /// </summary>
     public partial class LoginView : UserControl
     {
-        public LoginView()
-        {
-            InitializeComponent();
-        }
+        //private readonly LoginViewModel _viewModel;
+        //private IAPIHelper apiHelper;
+
+        //public LoginView()
+        //{
+        //    InitializeComponent();
+
+
+        //    _viewModel = new LoginViewModel(apiHelper);
+        //    DataContext = _viewModel;
+        //}
     }
 }
