@@ -1,13 +1,7 @@
 ﻿using Caliburn.Micro;
 using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using ZKRDesktopUI.Helpers;
+using ZKRDesktopUI.Library.Api;
 
 namespace ZKRDesktopUI.ViewModels
 {
@@ -90,6 +84,10 @@ namespace ZKRDesktopUI.ViewModels
             {
                 ErrorMessage = "";
                 var result = await _apiHelper.Authenticate(UserName, Password);
+
+                //Capture more info about user
+                await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
+                    
             }
             catch ( Exception ex)
             {

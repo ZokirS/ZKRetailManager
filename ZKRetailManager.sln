@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKRDesktopUI", "ZKRDesktopU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKRDataManager.Library", "ZKRDataManager.Library\ZKRDataManager.Library.csproj", "{2F4771F9-D66F-4976-A67B-76C55149E58D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZKRDesktopUI.Library", "ZKRDesktopUI.Library\ZKRDesktopUI.Library.csproj", "{43257D8A-09C1-446F-8064-82FCB0C745CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{2F4771F9-D66F-4976-A67B-76C55149E58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F4771F9-D66F-4976-A67B-76C55149E58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F4771F9-D66F-4976-A67B-76C55149E58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43257D8A-09C1-446F-8064-82FCB0C745CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43257D8A-09C1-446F-8064-82FCB0C745CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43257D8A-09C1-446F-8064-82FCB0C745CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43257D8A-09C1-446F-8064-82FCB0C745CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

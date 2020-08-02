@@ -12,13 +12,14 @@ namespace ZKRDataManager.Controllers
     [Authorize]
     public class UserController : ApiController 
     {
+        [HttpGet]
         // GET: User/Details/5
-        public List<UserModel> GetById()
+        public UserModel GetById()
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
             UserData data = new UserData();
 
-            return data.GetUserById(userId);
+            return data.GetUserById(userId).First();
         }
     }
 }

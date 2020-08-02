@@ -7,6 +7,8 @@ using System.Windows;
 using System.Windows.Controls;
 using Caliburn.Micro;
 using ZKRDesktopUI.Helpers;
+using ZKRDesktopUI.Library.Api;
+using ZKRDesktopUI.Library.Models;
 using ZKRDesktopUI.ViewModels;
 
 namespace ZKRDesktopUI
@@ -32,6 +34,7 @@ namespace ZKRDesktopUI
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<ILoggedInUserModel, LoggedInUserModel>() 
                 .Singleton<IAPIHelper, APIHelper>();
 
             GetType().Assembly.GetTypes()
