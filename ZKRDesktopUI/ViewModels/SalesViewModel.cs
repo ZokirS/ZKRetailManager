@@ -30,7 +30,19 @@ namespace ZKRDesktopUI.ViewModels
             set 
             {
                 _cart = value;
-                NotifyOfPropertyChange(() => Products);
+                NotifyOfPropertyChange(() => Cart);
+            }
+        }
+
+        private int _itemQuantity;
+
+        public int ItemQuantity
+        {
+            get { return _itemQuantity; }
+            set
+            {
+                _itemQuantity = value;
+                NotifyOfPropertyChange(() => ItemQuantity);
             }
         }
 
@@ -55,17 +67,7 @@ namespace ZKRDesktopUI.ViewModels
                 return "$0.00";
             }
         }
-        private string _itemQuantity;
-
-        public string ItemQuantity
-        {
-            get { return _itemQuantity; }
-            set
-            {
-                _itemQuantity = value;
-                NotifyOfPropertyChange(() => Products);
-            }
-        }
+       
 
         public bool CanAddToCart
         {

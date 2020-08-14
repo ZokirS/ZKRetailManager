@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using System;
 using System.Threading.Tasks;
+using ZKRDesktopUI.EventModels;
 using ZKRDesktopUI.Library.Api;
 
 namespace ZKRDesktopUI.ViewModels
@@ -10,10 +11,12 @@ namespace ZKRDesktopUI.ViewModels
         private string _userName;
         private string _password;
         private IAPIHelper _apiHelper;
+        private IEventAggregator _events;
 
-        public LoginViewModel(IAPIHelper aPIHelper)
+        public LoginViewModel(IAPIHelper aPIHelper, IEventAggregator events)
         {
             _apiHelper = aPIHelper;
+            _events = events;
         }
 
         public string UserName
@@ -87,7 +90,8 @@ namespace ZKRDesktopUI.ViewModels
 
                 //Capture more info about user
                 await _apiHelper.GetLoggedInUserInfo(result.Access_Token);
-                    
+
+                _events.PublishOnUIThread(new LogOnEvent());
             }
             catch ( Exception ex)
             {
